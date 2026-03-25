@@ -1,10 +1,12 @@
-name: CI
+name: CI Practice
 
-on: [push]
+on:
+  push:
 
 jobs:
-  build:
+  test-job:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Hello world"
+      - name: Say hello
+        run: echo "Hello Dominique"
